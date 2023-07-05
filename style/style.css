@@ -55,10 +55,18 @@ body {
   justify-content: space-around;
 }
 
-.telegram-box {}
+@media screen and (max-width: 768px) {
+  .label-input {
+    font-size: 20px;
+  }
 
-.telegram__link {}
+  .button-input {
+    padding: 10px 22px;
+    font-size: 12px;
+  }
 
-.whatsapp-box {}
-
-.whatsapp__link {}
+  .box-container svg {
+    width: 80px;
+    height: 80px;
+  }
+}
