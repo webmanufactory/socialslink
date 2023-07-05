@@ -11,4 +11,8 @@ document.querySelector('.button-input').addEventListener('click', () => {
     document.querySelector('.whatsapp__link').href = "https://wa.me/" + (input.value[0] = '+7' + input.value.slice(1).replaceAll(/[^0-9\+]/g, ''));
   }
   input.value = '';
+  document.querySelector('.message-container').classList = 'message-container active'
+  setTimeout(function () {
+    document.querySelector('.message-container').classList = 'message-container';
+  }, 1000)
 })
